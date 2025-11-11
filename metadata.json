@@ -1,0 +1,5 @@
+{
+  "name": "Hypercube Evolution Visualizer",
+  "description": "An interactive application that graphically represents the progressive evolution of a square (2D) into its higher-dimensional geometric extensions, up to an enneract (9-cube). The visualization clearly shows the construction logic at each step, creating a sense of logical and aesthetic progression through abstract dimensional spaces.",
+  "requestFramePermissions": []
+}
