@@ -67,7 +67,9 @@ const HypercubeVisualizer: React.FC<HypercubeVisualizerProps> = ({ dimension, si
         x += point[k] * Math.cos(angle);
         y += point[k] * Math.sin(angle);
       }
-      const scaleFactor = size * 1.8 / Math.sqrt(dimension) ;
+      // Adjusted scaling factor to ensure the hypercube fits within the viewbox.
+      // The original factor's reduction was not aggressive enough for higher dimensions.
+      const scaleFactor = size * 2.2 / (dimension - 1);
       return { x: x * scaleFactor, y: y * scaleFactor };
     });
   }, [nDVertices, dimension, size]);
